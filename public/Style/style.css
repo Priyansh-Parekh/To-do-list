@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body {
+    background-color: #8fa0a6;
+}
+
+#Heading {
+    background-color: #c8babd;
+    color: #444444;
+    padding: 1em;
+    box-shadow: 0 0 5px #c8babd;
+}
+
+#box1 {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 1em;
+
+    input {
+        width: 100vh;
+        font-size: x-large;
+        padding: 0.5em;
+        border-radius: 4px;
+        border: none;
+        color: #444444;
+        background-color: lightgrey;
+    }
+
+    textarea {
+        width: 150vh;
+        resize: none;
+        height: 20vh;
+        font-size: large;
+        padding: 1em;
+        background-color: lightgrey;
+        color: #444444;
+        border: none;
+        border-radius: 4px;
+    }
+
+    button {
+        width: 20vh;
+        height: 7.5vh;
+        border: none;
+        font-size: 15px;
+        border-radius: 4px;
+        background-color: lightgreen;
+        color: deeppink;
+        font-weight: bolder;
+        transition: transform 1s;
+    }
+
+    button:hover {
+        color: lightgreen;
+        background-color: deeppink;
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+
+#box2 {
+    display: flex;
+    gap: 4em;
+
+    div {
+        margin: 3em;
+        padding: 1em;
+        background-color: #c8babd;
+        box-shadow: 0 0 50px #444444;
+        border-radius: 5px;
+        overflow: hidden;
+        height: 30vh;
+        width: 40vh;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    h3 {
+        color: #444444;
+    }
+
+    a {
+        text-decoration: none;
+        color: blueviolet;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+
+    button {
+        width: 15vh;
+        height: 4vh;
+        border: none;
+        font-size: 15px;
+        border-radius: 4px;
+        background-color: red;
+        color: #ffffff;
+        font-weight: bolder;
+    }
+
+    button:hover {
+        color: red;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+
+
+}
+
+#box3 {
+    margin: 2em;
+    padding: 1em;
+    color: #444444;
+}

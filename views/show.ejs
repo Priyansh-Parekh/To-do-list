@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:darkgray;
+        }
+
+        a {
+            text-decoration: none;
+            color: blueviolet;
+            margin: 1em;
+            font-size: xx-large;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+        h1{
+            margin: 2em;
+            color: #444444;
+        }p{
+            border: 1px #444444 solid;
+            padding: 2em;
+            box-shadow: 0 0 10px #444444;
+            margin: 2em;
+            border-radius: 5px;
+            height: max-content;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/">Home</a>
+    <h1><%=filename%></h1>
+    <p><%= data %></p>
+
+</body>
+
+</html>

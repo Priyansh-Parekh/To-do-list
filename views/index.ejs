@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+    <h1 id="Heading">To-Do-List</h1>
+    <form action="/create" method="post" id="box1">
+        <input type="text" placeholder="Enter your Title" name="title">
+        <textarea name="details" placeholder="Enter your Work Details"></textarea>
+        <button>Create Task</button>
+    </form>
+
+    <% if (files.length===0) { %>
+        <div id="box3">
+            <h2>No Task yet! Please create some tasks.</h2>
+        </div>
+        <% } else { %>
+            <div id="box2">
+                <% files.forEach(fil=> { %>
+                    <div>
+                        <h3> <%= fil%></h3>
+                        <a href="/file/<%=fil%>">Read more...</a>
+                        <button>Delete</button>
+                    </div>
+                    <% }); %>
+            </div>
+            <% } %>
+
+</body>
+
+</html>

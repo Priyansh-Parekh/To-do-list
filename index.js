@@ -31,6 +31,16 @@ app.post("/create",(req,res)=>{
     })
 });
 
+app.post("/delete/:filename",(req,res)=>{
+    fs.unlink(`./file/${req.params.filename}`,(err)=>{
+        if(err){
+            console.error("Error deleting file:", err);
+            return;
+        }
+        res.redirect("/")
+    })
+})
+
 app.get("/file/:filename",(req,res)=>{
     fs.readFile(`./file/${req.params.filename}`,"utf-8",(err,data)=>{
         res.render('show',{data:data,filename:req.params.filename},);

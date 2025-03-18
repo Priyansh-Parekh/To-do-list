@@ -23,11 +23,11 @@
         <% } else { %>
             <div id="box2">
                 <% files.forEach(fil=> { %>
-                    <div>
+                    <form action="/delete/<%= fil %>" method="post">
                         <h3> <%= fil%></h3>
                         <a href="/file/<%=fil%>">Read more...</a>
                         <button>Delete</button>
-                    </div>
+                    </form>
                     <% }); %>
             </div>
             <% } %>

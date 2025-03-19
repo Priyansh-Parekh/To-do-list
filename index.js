@@ -46,6 +46,26 @@ app.get("/file/:filename",(req,res)=>{
         res.render('show',{data:data,filename:req.params.filename},);
     })
 });
+
+app.get("/edit/:filename",(req,res)=>{
+   res.render('edit',{filename:req.params.filename});
+});
+
+
+app.post("/edit",(req,res)=>{
+    fs.rename(`./file/${req.body.prev}`,`./file/${req.body.new.split(" ").join("")}.txt`,(err)=>{
+        if(err){
+            console.log(err);
+        }
+    })
+    fs.writeFile(`./file/${req.body.prev}`,req.body.data,(err)=>{
+        if(err){
+            console.log(err);
+
+        }
+        res.redirect("/");
+    })
+})
 // console.log("hello")
 
 app.listen(3000)

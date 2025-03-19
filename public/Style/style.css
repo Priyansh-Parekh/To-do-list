@@ -1,123 +1,120 @@
+/* Reset some default styling */
 * {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-
-}
-
-body {
-    background-color: #8fa0a6;
-}
-
-#Heading {
-    background-color: #c8babd;
-    color: #444444;
-    padding: 1em;
-    box-shadow: 0 0 5px #c8babd;
-}
-
-#box1 {
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* Heading styling */
+  #Heading {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Form for creating a task */
+  #box1 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto 30px;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #box1 input[type="text"],
+  #box1 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  #box1 button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #box1 button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for tasks list container */
+  #box2,
+  #box3 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* When no tasks exist */
+  #box3 h2 {
+    text-align: center;
+    color: #777;
+  }
+  
+  /* Styling for each task form in #box2 */
+  #box2 form {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
     display: flex;
-    flex-direction: column;
-    padding: 2em;
-    gap: 1em;
-
-    input {
-        width: 100vh;
-        font-size: x-large;
-        padding: 0.5em;
-        border-radius: 4px;
-        border: none;
-        color: #444444;
-        background-color: lightgrey;
-    }
-
-    textarea {
-        width: 150vh;
-        resize: none;
-        height: 20vh;
-        font-size: large;
-        padding: 1em;
-        background-color: lightgrey;
-        color: #444444;
-        border: none;
-        border-radius: 4px;
-    }
-
-    button {
-        width: 20vh;
-        height: 7.5vh;
-        border: none;
-        font-size: 15px;
-        border-radius: 4px;
-        background-color: lightgreen;
-        color: deeppink;
-        font-weight: bolder;
-        transition: transform 1s;
-    }
-
-    button:hover {
-        color: lightgreen;
-        background-color: deeppink;
-        transform: scale(1.2);
-        cursor: pointer;
-    }
-}
-
-#box2 {
-    display: flex;
-    gap: 4em;
-
-    form{
-        margin: 3em;
-        padding: 1em;
-        background-color: #c8babd;
-        box-shadow: 0 0 50px #444444;
-        border-radius: 5px;
-        overflow: hidden;
-        height: 30vh;
-        width: 40vh;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    h3 {
-        color: #444444;
-    }
-
-    a {
-        text-decoration: none;
-        color: blueviolet;
-    }
-
-    a:hover {
-        cursor: pointer;
-    }
-
-    button {
-        width: 15vh;
-        height: 4vh;
-        border: none;
-        font-size: 15px;
-        border-radius: 4px;
-        background-color: red;
-        color: #ffffff;
-        font-weight: bolder;
-    }
-
-    button:hover {
-        color: red;
-        background-color: #ffffff;
-        cursor: pointer;
-    }
-
-
-}
-
-#box3 {
-    margin: 2em;
-    padding: 1em;
-    color: #444444;
-}
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #box2 form:last-child {
+    border-bottom: none;
+  }
+  
+  #box2 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  #box2 a {
+    margin-right: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  #box2 a:hover {
+    text-decoration: underline;
+  }
+  
+  #box2 button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #box2 button:hover {
+    background-color: #c82333;
+  }
+  
